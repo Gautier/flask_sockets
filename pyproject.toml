@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fs"
+version = "0.1.1"
+description = ""
+authors = ["YO"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "2.2.2"
+gunicorn = "20.1.0"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+echo = "fs.echo:main"
